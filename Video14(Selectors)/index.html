@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            /* background-color: red; */
+        }
+        .red{
+            background-color: red;
+        }
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+        div > p{
+            color: violet;
+            background-color: rgb(130, 130, 174);
+        }
+          div p {
+            /* descendant selector  */
+            color: rgb(38, 207, 44);
+            background-color: sandybrown;
+        } 
+         /*Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+         }
+         /* Pseudo selector */
+         a:visited{
+            color: purple; 
+         }
+         a:link{
+            color: orange;
+         }
+         /* jab link pe click kar rahe ho to color change ho jaye */
+         a:active{
+            background-color: deeppink;
+         }
+         a:hover{
+            background-color:  darkgray;
+         }
+         p:first-child{
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+        <p>I am a paragraph, a short note about html,css and javascript</p>
+    
+    </article>
+    </div>
+    <div id="green">
+        I am a div
+    </div>
+    <a href="https://www.google.com">Google Website</a>
+    <a href="https://www.Instagram.com">Instagram</a>
+    <a href="https://www.youtube.com">youtube</a>
+</body>
+</html>
