@@ -12,13 +12,41 @@
         /* .box::first-line {
             color: red;
         } */
-         .boxes * {
+         /* .boxes * {
             color: red;
             border: 2px solid black;
         }
-        [data-color="Primary"]{
+        p, a, .box,[data-color="Primary"]{
             padding-top: 40px;
-        }
+        } */
+         /* .box:nth-child(even) {
+            background-color: blue;
+        } */
+         /* .box:nth-last-child(1) {
+            background-color: red;} */
+            .boxes::before{
+                content: "Hey I am a before element";
+                color: red;
+            }
+            .boxes::after{
+                content: "Hey I am a after element";
+                color:blue
+            }
+            ::selection{
+                
+                background-color: black;
+                color:aqua
+            }
+            .box::first-letter{
+                font-size: 30px;
+                color:peru
+
+                
+            }
+            input::placeholder{
+                color: red;
+                font-size: 20px;
+            }
     </style>
 </head>
 
@@ -27,6 +55,7 @@
         <div data-color="Primary" class="box">Hey I am a Box</div>
         <div class="box">Hey I am a Box</div>
         <div class="box">Hey I am a Box</div>
+        <input type="text" palaceholder="Hey I am a input box">
     </div>
 </body>
 
