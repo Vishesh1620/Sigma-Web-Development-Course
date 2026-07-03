@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>More on css selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+        /* .box::first-line {
+            color: red;
+        } */
+         .boxes * {
+            color: red;
+            border: 2px solid black;
+        }
+        [data-color="Primary"]{
+            padding-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="boxes">
+        <div data-color="Primary" class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
 </body>
+
 </html>
