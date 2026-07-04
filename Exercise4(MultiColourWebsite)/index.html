@@ -10,6 +10,21 @@
     </style>
 
     <style>
+        /* :root {
+            --primary-color: rgb(141, 45, 232);
+            --text-color: white;
+            --secondary-color: rgb(219, 192, 244);
+        } */
+        :root {
+            --primary-color: rgb(28, 196, 45);
+            --text-color: white;
+            --secondary-color: rgb(21, 190, 168);
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,17 +32,25 @@
         }
 
         nav {
-            background-color: blueviolet;
+            background-color: var(--primary-color);
             padding: 12px 10px;
         }
 
         ul li {
             list-style-type: none;
+            color: var(--text-color);
             display: inline;
-            padding:23px
+            padding: 23px;
+            font-weight: bolder;
+
         }
 
-        ul li {}
+
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -35,11 +58,10 @@
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact Us</li>
-
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
             </ul>
         </nav>
     </header>
