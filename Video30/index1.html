@@ -16,20 +16,68 @@
             border-radius: 5px 10px 5px 10px;
             overflow: hidden;
             position: relative;
-            scrollbar-width: thin; /* For Firefox */
+            scrollbar-width: thin;
+            /* For Firefox */
             display: flex;
             flex-direction: column;
-            height: 60px; /* Set a fixed height for the div */
-            
+            height: 60px;
+            /* Set a fixed height for the div */
+
+        }
+
+        .glass-nav {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(92%, 900px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+            border-radius: 999px;
+
+            background: rgba(255, 255, 255, 0.12);
+            /* translucent */
+            backdrop-filter: blur(14px) saturate(160%);
+            /* the glass effect */
+            -webkit-backdrop-filter: blur(14px) saturate(160%);
+            /* Safari */
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            /* light edge */
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            /* depth */
+            z-index: 100;
+        }
+
+        .glass-nav ul {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .glass-nav a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
+    <nav class="glass-nav">
+        <a href="/" class="logo">brand</a>
+        <ul>
+            <li><a href="#">work</a></li>
+            <li><a href="#">distillery</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
     <div>I am a paragraph.</div>
-    <div>I am another paragraph</div>
-    <div>I am a third paragraph.</div>
-    <div>I am a fourth paragraph.</div>
+    <!-- <div>I am another paragraph</div> -->
+    <!-- <div>I am a third paragraph.</div> -->
+    <!-- <div>I am a fourth paragraph.</div> -->
 
 </body>
 
